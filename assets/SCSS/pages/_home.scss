@@ -1,0 +1,104 @@
+#chef{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    .content{
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+        .txt{
+            color:#ff5600;
+            font-size: 1.3rem;
+        }
+        .big-content{
+            font-weight: bold;
+            font-size: 2.7rem;
+        }
+        .content-desriptoin{
+            font-family: "Poppins",sans-serif;
+            font-size: 16px;
+              color: #212025;
+              line-height: 1.6;
+        }
+        .logo-detail{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 13px;
+            .logo-content{
+                width: 42%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                 gap: 15px;
+                .img{
+                    width: 25px;
+                }
+             }
+            }
+        }
+        .chef-img{
+            width: 48%;
+            height: 683px;
+            .img-chef{
+                width: 100%;
+                height: 680px;
+            }
+        }
+    }
+#restaurant{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+.btn{
+    width: 182px;
+    height: 60px;
+    position: relative;
+    border: 1px solid rgb(255, 86, 0);
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    color: gray;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 1s;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #ff5600;
+
+}
+    @media (max-width: 797px) {
+      .container .content{
+        width: 100%;
+      }
+      .container .chef-img{
+        width: 100%;
+        height: auto;
+      }
+      .container .chef-img .img-chef{
+        height: auto;    
+    }
+    .btn{
+        width: 115px;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+    }
+    @media (max-width:500px){
+        .container .content .logo-detail .logo-content{
+            width: 100%;
+        }
+        .img-chef{
+            height: auto;    
+        }
+        .container .chef-img .img-chef{
+            height: auto;    
+        }
+    }
